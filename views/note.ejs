@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Note App</title>
+  <link rel="stylesheet" href="css/note.css">
+</head>
+
+<body>
+  <!-- Header -->
+  <header class="header">
+    <h1>Note App</h1>
+  </header>
+
+  <!-- Main Content -->
+  <main class="main-content">
+      <% if (locals.notes) { %>
+        <section class="note-section">
+          <h2>My Notes</h2>
+          <div class="notes-container">
+            
+            <% const notesArray=Object.entries(notes); %>
+          <% for (const [index, notesData] of notesArray) { %>
+            
+            <div class="note">
+              <h3><%= notesData.title %></h3>
+              <p><%= notesData.discription %></p> 
+            </div>
+            <!-- <div class="note">
+              <h3>Note 2</h3>
+              <p>This is my second note.</p>
+            </div> -->
+            <% } %>
+            
+          </div>
+        </section>
+        <% } %>
+
+
+          <section class="add-note-section">
+            <h2>Add a New Note</h2>
+            <form id="note-form" action="/note" method="post">
+              <label for="note-title">Title:</label>
+              <input type="text" id="note-title" name="note_title" required>
+
+              <label for="note-content">Content:</label>
+              <textarea id="note-content" name="note_content" required></textarea>
+
+              <button type="submit">Add Note</button>
+            </form>
+          </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>&copy; 2023 Note App. All rights reserved.</p>
+  </footer>
+</body>
+
+</html>

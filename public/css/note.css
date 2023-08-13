@@ -1,0 +1,93 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  .header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+  }
+  
+  .header h1 {
+    margin: 0;
+    font-size: 28px;
+  }
+  
+  .main-content {
+    padding: 20px;
+  }
+  
+  .note-section {
+    margin-bottom: 20px;
+  }
+  
+  .note-section h2 {
+    margin: 0;
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .notes-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 20px;
+  }
+  
+  .note {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+  }
+  
+  .note h3 {
+    margin: 0;
+    font-size: 20px;
+    margin-bottom: 5px;
+  }
+  
+  .add-note-section {
+    margin-bottom: 20px;
+  }
+  
+  .add-note-section h2 {
+    margin: 0;
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  #note-form label,
+  #note-form textarea,
+  #note-form button {
+    display: block;
+    width: 100%;
+    margin-bottom: 15px;
+  }
+  
+  #note-form textarea {
+    resize: vertical;
+    height: 100px;
+  }
+  
+  #note-form button {
+    padding: 10px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  #note-form button:hover {
+    background-color: #555;
+  }
+  
+  .footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+  }
+  

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login/Signup </title>
+  <link rel="stylesheet" href="css/home.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="navbar-logo">
+      <!-- Replace 'logo.png' with your actual logo image -->
+      <img src="logo.png" alt="Logo">
+    </div>
+    <ul class="navbar-menu">
+      <li><a href="#login">Login</a></li>
+      <li><a href="#signup">Sign Up</a></li>
+    </ul>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Welcome to Our Platform</h1>
+    </div>
+  </section>
+
+  <!-- Login Form -->
+  <section id="login" class="form-section">
+    <h2>Login</h2>
+    <form action="/users/signin" method="post" >
+      <label for="email">Email/Username</label>
+      <input type="text" id="email" name="email" required>
+
+      <label for="password">Password</label>
+      <input type="password" id="password" name="password" required>
+
+      <a href="#forgot-password">Forgot Password?</a>
+
+      <button type="submit">Login</button>
+    </form>
+  </section>
+
+  <!-- Signup Form -->
+  <section id="signup" class="form-section">
+    <h2>Sign Up</h2>
+    <form action="/users/signup" method="post">
+      <label for="fullname">Full Name</label>
+      <input type="text" id="fullname" name="fullname" required>
+
+      <label for="signup-email">Email/Username</label>
+      <input type="text" id="signup-email" name="signup_email" required>
+
+      <label for="signup-password">Password</label>
+      <input type="password" id="signup-password" name="signup_password" required>
+
+      <label>
+        <input type="checkbox" name="agree" required>
+        I agree to the terms and conditions
+      </label>
+
+      <button type="submit">Sign Up</button>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <ul>
+      <li><a href="#about-us">About Us</a></li>
+      <li><a href="#contact-us">Contact Us</a></li>
+      <li><a href="#privacy-policy">Privacy Policy</a></li>
+    </ul>
+    <!-- Add your social media icons or links here -->
+  </footer>
+</body>
+</html>
